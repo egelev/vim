@@ -56,7 +56,7 @@ set number
 set hlsearch
 set incsearch
 set ignorecase
-set smartcase
+"set smartcase
 set smartindent
 "set tabstop=4
 "set shiftwidth=4
