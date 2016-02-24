@@ -50,6 +50,7 @@ nmap <F12> :bn<CR>
 nmap <F2> :bp<CR>
 nmap <Tab>- :sp<CR>
 nmap <Tab>\ :vsp<CR>
+nmap <C-c> :let @/ = ""<CR>
 
 " Set numbers
 set number
