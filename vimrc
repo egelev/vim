@@ -61,7 +61,7 @@ set ignorecase
 set smartindent
 "set tabstop=4
 "set shiftwidth=4
-"set expandtab
+set expandtab
 set hidden " switch buffers without raising an errro message
 set splitbelow
 set splitright
