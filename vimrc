@@ -13,7 +13,7 @@ filetype plugin indent on
 "
 "Useful mappings -------------------------------------------------------------
 " Next opened buffer
-"nmap <S-n> :bnext<CR> 
+"nmap <S-n> :bnext<CR>
 " Previous opened buffer
 "nmap <S-b> :bprev<CR>"
 " Close current buffer
@@ -66,3 +66,10 @@ set hidden " switch buffers without raising an errro message
 set splitbelow
 set splitright
 set cursorline
+
+" Solarized settings
+let g:solarized_termcolors=256
+colorscheme solarized
+" set background=light
+set background=dark
+call togglebg#map("<F5>")
