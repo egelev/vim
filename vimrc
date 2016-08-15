@@ -73,3 +73,8 @@ colorscheme solarized
 " set background=light
 set background=dark
 call togglebg#map("<F5>")
+
+" Set folding depending on file syntax
+set foldmethod=syntax
+" Do not fold by default
+set nofoldenable
