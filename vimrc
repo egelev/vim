@@ -78,3 +78,6 @@ call togglebg#map("<F5>")
 set foldmethod=syntax
 " Do not fold by default
 set nofoldenable
+
+" Undotree mapping
+nmap <F6> :UndotreeToggle<CR>
