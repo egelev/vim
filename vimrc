@@ -81,3 +81,7 @@ set nofoldenable
 
 " Undotree mapping
 nmap <F6> :UndotreeToggle<CR>
+" let undotree window get focus after being opened
+let g:undotree_SetFocusWhenToggle = 1
+" Window layout (options: 1, 2, 3, 4)
+let g:undotree_WindowLayout = 2
