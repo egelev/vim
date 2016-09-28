@@ -45,9 +45,9 @@ nmap <C-t> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
 " Next buffer
-nmap <F12> :bn<CR>
+nmap <Tab>> :bn<CR>
 " Previous buffer
-nmap <F2> :bp<CR>
+nmap <Tab>< :bp<CR>
 nmap <Tab>- :sp<CR>
 nmap <Tab>\ :vsp<CR>
 nmap <C-c> :let @/ = ""<CR>
