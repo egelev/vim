@@ -3,6 +3,8 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+set encoding=utf-8
+
 " Normally to generate documentation, Vim expects you to run :helptags on each
 " directory with documentation (e.g., :helptags ~/.vim/doc). Provided with
 " pathogen.vim is a :Helptags command that does this on every directory in
