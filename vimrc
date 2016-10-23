@@ -6,6 +6,30 @@ filetype plugin indent on
 set nocompatible
 set encoding=utf-8
 
+
+function! TimeCmp(time1, time2)
+ let [hour1, min1] = split(a:time1, ':')
+ let [hour2, min2] = split(a:time2, ':')
+ if hour1 != hour2
+   return hour1 - hour2
+ endif
+   return min1 - min2
+endfun
+
+" Solarized settings
+let g:solarized_termcolors=256
+" Default background
+set background=dark
+colorscheme solarized
+if !empty($VIM_DAYLIGHT_START) && !empty($VIM_DAYLIGHT_END)
+  if TimeCmp(strftime("%H:%M"), $VIM_DAYLIGHT_START) >= 0 && TimeCmp(strftime("%H:%M"), $VIM_DAYLIGHT_END) <= 0
+    set background=light
+  else
+    set background=dark
+  endif
+end
+call togglebg#map("<F5>")
+
 " Normally to generate documentation, Vim expects you to run :helptags on each
 " directory with documentation (e.g., :helptags ~/.vim/doc). Provided with
 " pathogen.vim is a :Helptags command that does this on every directory in
@@ -69,13 +93,6 @@ set hidden " switch buffers without raising an error message
 set splitbelow
 set splitright
 set cursorline
-
-" Solarized settings
-let g:solarized_termcolors=256
-colorscheme solarized
-" set background=light
-set background=dark
-call togglebg#map("<F5>")
 
 " Set folding depending on file syntax
 set foldmethod=syntax
