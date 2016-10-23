@@ -3,6 +3,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+set nocompatible
 set encoding=utf-8
 
 " Normally to generate documentation, Vim expects you to run :helptags on each
@@ -64,7 +65,7 @@ set smartindent
 "set tabstop=4
 "set shiftwidth=4
 set expandtab
-set hidden " switch buffers without raising an errro message
+set hidden " switch buffers without raising an error message
 set splitbelow
 set splitright
 set cursorline
