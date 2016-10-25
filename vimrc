@@ -39,13 +39,7 @@ call togglebg#map("<F5>")
 "
 "
 "Useful mappings -------------------------------------------------------------
-" Next opened buffer
-"nmap <S-n> :bnext<CR>
-" Previous opened buffer
-"nmap <S-b> :bprev<CR>"
-" Close current buffer
-"nmap <S-d> :bd<CR>
-"
+
 " This is need by vim-airline to show up--------------------------------------
 set laststatus=2
 " Automatically displays all buffers when there's only one tab open.
@@ -66,7 +60,7 @@ nmap <F8> :TagbarToggle<CR>
 "
 "
 "NerdTree---------------------------------------------------------------------
-nmap <C-t> :NERDTreeToggle<CR>
+nmap <C-n> :NERDTreeToggle<CR>
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
