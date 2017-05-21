@@ -99,3 +99,7 @@ nmap <F6> :UndotreeToggle<CR>
 let g:undotree_SetFocusWhenToggle = 1
 " Window layout (options: 1, 2, 3, 4)
 let g:undotree_WindowLayout = 2
+
+" vim-closetag configuration
+" filenames like *.xml, *.html, *.xhtml, ...
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.xml,*.htm"
