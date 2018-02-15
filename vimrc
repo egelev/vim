@@ -105,6 +105,8 @@ let g:undotree_WindowLayout = 2
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.xml,*.htm"
 
 
+" ============================== TypeScript IDE ==============================
+
 " TypeScript-Vim: https://github.com/leafgarland/typescript-vim ==============
 "
 " To disable indenting
@@ -140,3 +142,10 @@ autocmd FileType typescript setlocal completeopt+=menu,preview
 "
 " Display tooltip window about symbol under the mouse cursor
 autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
+
+" YouCompleteMe: https://github.com/Valloric/YouCompleteMe ===================
+" Set YouCompleteMe to trigger autocomplete on '.'
+if !exists("g:ycm_semantic_triggers")
+  let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers['typescript'] = ['.']
