@@ -120,3 +120,23 @@ let g:typescript_compiler_options = ''
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
 
+" Tsuquyomi https://github.com/Quramy/tsuquyomi ==============================
+" Disaple the popupmenu
+" autocmd FileType typescript setlocal completeopt-=menu
+"
+" Show a method's signature in the popup menu (This option makes completion slow)
+" let g:tsuquyomi_completion_detail = 1
+"
+" Show a method's signature in the preview window when you complete this
+" method's arguments (default). The preview window isn't shown when completion
+" properties or variables
+autocmd FileType typescript setlocal completeopt+=menu,preview
+"
+" Disable the Tsuquyomi default mappings:
+"
+" <C-]> where the symbol under the cursor is defined
+" <C-^> where the symbol under the cursor is referenced
+" let g:tsuquyomi_disable_default_mappings = 1
+"
+" Display tooltip window about symbol under the mouse cursor
+autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
