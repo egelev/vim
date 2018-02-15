@@ -103,3 +103,20 @@ let g:undotree_WindowLayout = 2
 " vim-closetag configuration
 " filenames like *.xml, *.html, *.xhtml, ...
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.xml,*.htm"
+
+
+" TypeScript-Vim: https://github.com/leafgarland/typescript-vim ==============
+"
+" To disable indenting
+" let g:typescript_indent_disable = 1
+"
+" Automatically indent chained method calls as you type
+setlocal indentkeys+=0.
+"
+" Options to change the compiler name and to insert default options
+let g:typescript_compiler_binary = 'tsc'
+let g:typescript_compiler_options = ''
+" Make the QuickFix window automatically appear if :make has any errors
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
+
