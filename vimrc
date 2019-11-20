@@ -136,3 +136,10 @@ if has('autocmd')
   autocmd GUIEnter * set visualbell t_vb=
 endif
 
+
+" Vim-Rainbow
+let g:rainbow_active = 1
+"let g:rainbow_guifgs = ['RoyalBlue3', 'DarkOrange3', 'DarkOrchid3', 'FireBrick']
+"let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
+let g:rainbow_guifgs = ['brown', 'Darkblue', 'darkgray', 'darkgreen', 'darkcyan', 'darkred', 'darkmagenta', 'brown', 'gray', 'black', 'darkmagenta', 'Darkblue', 'darkgreen', 'darkcyan', 'darkred', 'red' ]
+let g:rainbow_ctermfgs = ['brown', 'Darkblue', 'darkgray', 'darkgreen', 'darkcyan', 'darkred', 'darkmagenta', 'brown', 'gray', 'black', 'darkmagenta', 'Darkblue', 'darkgreen', 'darkcyan', 'darkred', 'red' ]
