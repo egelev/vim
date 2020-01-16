@@ -143,3 +143,9 @@ let g:rainbow_active = 1
 "let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
 let g:rainbow_guifgs = ['brown', 'Darkblue', 'darkgray', 'darkgreen', 'darkcyan', 'darkred', 'darkmagenta', 'brown', 'gray', 'black', 'darkmagenta', 'Darkblue', 'darkgreen', 'darkcyan', 'darkred', 'red' ]
 let g:rainbow_ctermfgs = ['brown', 'Darkblue', 'darkgray', 'darkgreen', 'darkcyan', 'darkred', 'darkmagenta', 'brown', 'gray', 'black', 'darkmagenta', 'Darkblue', 'darkgreen', 'darkcyan', 'darkred', 'red' ]
+
+function! PresentationMode()
+ colorscheme default
+ set t_ut=
+endfun
+
