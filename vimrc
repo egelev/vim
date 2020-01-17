@@ -146,6 +146,12 @@ let g:rainbow_ctermfgs = ['brown', 'Darkblue', 'darkgray', 'darkgreen', 'darkcya
 
 function! PresentationMode()
  colorscheme default
+ set noshowmode
+ set noruler
+ set noshowcmd
+ set nonumber
+ set nocursorline
+ set laststatus=0
  set t_ut=
 endfun
 
