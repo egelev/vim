@@ -1,0 +1,23 @@
+" press Ctrl+j activates Idea smart line join
+set ideajoin
+
+" no sound bells
+set visualbell
+set noerrorbells
+
+" search
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
+" show numbers
+set number
+set relativenumber
+
+"
+set showmode
+
+" mappings in normal mode
+nnoremap gs :action GotoSuperMethod<CR>
+nnoremap gi :action GotoImplementation<CR>
